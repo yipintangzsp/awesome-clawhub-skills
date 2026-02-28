@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "skills": {
+    "image": {
+      "version": "1.0.3",
+      "installedAt": 1771904607276
+    },
+    "computer-vision-expert": {
+      "version": "1.0.0",
+      "installedAt": 1771907335236
+    },
+    "glass2claw": {
+      "version": "1.5.0",
+      "installedAt": 1771907358783
+    },
+    "wecom": {
+      "version": "1.0.0",
+      "installedAt": 1771993157174
+    },
+    "capability-evolver": {
+      "version": "1.14.0",
+      "installedAt": 1771994963368
+    },
+    "byterover": {
+      "version": "1.2.2",
+      "installedAt": 1771994974143
+    },
+    "self-improving-agent": {
+      "version": "1.0.11",
+      "installedAt": 1771994980252
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1771994989306
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1771994994626
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1771995001190
+    },
+    "sonoscli": {
+      "version": "1.0.0",
+      "installedAt": 1771995019944
+    },
+    "humanize": {
+      "version": "1.0.0",
+      "installedAt": 1771995034103
+    },
+    "tavily": {
+      "version": "1.0.0",
+      "installedAt": 1771995039852
+    },
+    "free-ride": {
+      "version": "1.0.4",
+      "installedAt": 1771995054073
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1771995065720
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1771995071450
+    },
+    "auto-updater": {
+      "version": "1.0.0",
+      "installedAt": 1771995077403
+    },
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1771995082139
+    },
+    "nano-banana-pro": {
+      "version": "1.0.1",
+      "installedAt": 1771995087069
+    },
+    "agent-chat": {
+      "version": "0.1.0",
+      "installedAt": 1771995148864
+    },
+    "pinterest": {
+      "version": "1.1.1",
+      "installedAt": 1771995187888
+    },
+    "home-assistant": {
+      "version": "1.0.0",
+      "installedAt": 1772018239290
+    },
+    "clawfeed-2": {
+      "version": "0.1.0",
+      "installedAt": 1772243509821
+    }
+  }
+}
