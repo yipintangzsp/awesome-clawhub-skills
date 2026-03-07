@@ -1,8 +1,15 @@
 {
-  "lastMemoryMaintenance": "2026-02-28",
+  "lastMemoryMaintenance": "2026-03-07",
   "lastChecks": {
-    "email": null,
-    "calendar": null,
-    "weather": null
-  }
+    "email": "2026-03-06T08:04:00+08:00",
+    "calendar": "2026-03-06T08:04:00+08:00",
+    "weather": "2026-03-06T08:04:00+08:00"
+  },
+  "notes": [
+    "2026-03-07: OpenClaw tools 权限已配置（profile: full, exec: full, ask: off）",
+    "2026-03-07: 已发布 9 个 SkillPay Skill 到 ClawHub",
+    "2026-03-07: Google Workspace CLI 已安装",
+    "2026-03-06: gog auth 需要重新配置 scopes",
+    "2026-03-06: weather 命令不可用，用 weather-pro skill 替代"
+  ]
 }

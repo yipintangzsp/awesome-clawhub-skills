@@ -1,0 +1,19 @@
+{
+  "name": "daily-news-pay",
+  "version": "1.0.0",
+  "description": "Daily News Summary Generator with SkillPay Billing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["openclaw", "skill", "skillpay", "news", "daily"],
+  "author": "张 sir",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  },
+  "bin": {
+    "daily-news-pay": "./index.js"
+  }
+}

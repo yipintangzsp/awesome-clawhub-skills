@@ -1,0 +1,15 @@
+{
+  "name": "summarize-pay",
+  "version": "1.0.0",
+  "description": "收费版内容总结工具（SkillPay 集成）",
+  "main": "index.js",
+  "bin": {
+    "summarize-pay": "./index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  },
+  "scripts": {
+    "test": "node index.js --help"
+  }
+}

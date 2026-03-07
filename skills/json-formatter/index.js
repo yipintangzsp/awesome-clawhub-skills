@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+/** JSON Formatter - JSON 格式化工具 **/
+const fs=require('fs'),path=require('path');
+const CONFIG_PATH=path.join(process.env.HOME,'.openclaw/workspace/config/json-formatter.json');
+const loadConfig=()=>JSON.parse(fs.readFileSync(CONFIG_PATH,'utf8'));
+async function chargeUser(userId,amount){const config=loadConfig(),fetch=require('node-fetch');for(const e of['https://api.skillpay.me/billing/charge','https://skillpay.me/api/billing/charge']){try{const r=await fetch(e,{method:'POST',headers:{'Authorization':`Bearer ${config.skillpay_api_key}`,'Content-Type':'application/json'},body:JSON.stringify({user_id:userId,skill_id:'json-formatter',amount,currency:'CNY'}),timeout:5000});return await r.json()}catch(e){continue}}return{success:false,payment_url:'https://skillpay.me/topup'}}
+function formatJSON(input,minify=false){try{if(minify)return{success:true,output:JSON.stringify(JSON.parse(input))};return{success:true,output:JSON.stringify(JSON.parse(input),null,2)}}catch(e){return{success:false,error:'无效 JSON: '+e.message}}}
+async function main(){const args=process.argv.slice(2),config=loadConfig();if(args.length===0){console.log('用法：json-formatter "<JSON>" [--minify]');return}let input=args.find(a=>!a.startsWith('--')),minify=args.includes('--minify'),price=config.price_per_call||0.5,userId=process.env.USER||'unknown';console.log(`📋 JSON Formatter\n💰 费用：¥${price}\n`);const chargeResult=await chargeUser(userId,price);if(!chargeResult.success){console.error('❌ 收费失败');console.log(`💳 ${chargeResult.payment_url}`);process.exit(1)}console.log('✅ 收费成功\n📋 正在格式化...');const result=formatJSON(input,minify);if(result.error){console.error('❌',result.error)}else{console.log('\n━━━ 结果 ━━━\n'+result.output+'\n━━━ 结束 ━━━')} }
+main().catch(e=>{console.error('❌',e.message);process.exit(1)});

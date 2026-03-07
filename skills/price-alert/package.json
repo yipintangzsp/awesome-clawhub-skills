@@ -1,0 +1,1 @@
+{"name":"price-alert","version":"1.0.0","main":"index.js","bin":{"price-alert":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

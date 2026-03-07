@@ -1,0 +1,1 @@
+{"name":"social-media-scheduler","version":"1.0.0","main":"index.js","bin":{"social-media-scheduler":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

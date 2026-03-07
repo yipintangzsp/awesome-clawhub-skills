@@ -1,0 +1,1 @@
+{"name":"email-validator","version":"1.0.0","main":"index.js","bin":{"email-validator":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

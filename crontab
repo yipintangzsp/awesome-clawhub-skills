@@ -1,0 +1,17 @@
+# OpenClaw 定时任务配置
+# 使用方法：crontab /Users/admin/.openclaw/workspace/crontab
+
+# 每小时：OpenClaw 自动升级（检查新版本并升级）
+0 * * * * /Users/admin/.openclaw/workspace/scripts/update-openclaw.sh >> ~/Library/Logs/openclaw-update.log 2>&1
+
+# 每天上午 10 点：磁盘清理（上午开机时执行）
+0 10 * * * /Users/admin/.openclaw/workspace/scripts/cleanup-disk.sh >> ~/Library/Logs/cleanup-disk.log 2>&1
+
+# 每天凌晨 3 点：磁盘清理（夜间开机时执行）
+0 3 * * * /Users/admin/.openclaw/workspace/scripts/cleanup-disk.sh >> ~/Library/Logs/cleanup-disk.log 2>&1
+
+# 每天下午 5 点：磁盘清理（傍晚开机时执行）
+0 17 * * * /Users/admin/.openclaw/workspace/scripts/cleanup-disk.sh >> ~/Library/Logs/cleanup-disk.log 2>&1
+
+# 每周日凌晨 3 点：深度清理（额外运行一次）
+0 3 * * 0 /Users/admin/.openclaw/workspace/scripts/cleanup-disk.sh >> ~/Library/Logs/cleanup-disk.log 2>&1

@@ -1,0 +1,12 @@
+{
+  "name": "youtube-summarize-pay",
+  "version": "1.0.0",
+  "description": "收费版 YouTube 视频总结",
+  "main": "index.js",
+  "bin": {
+    "youtube-summarize-pay": "./index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}

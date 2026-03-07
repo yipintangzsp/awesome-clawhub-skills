@@ -176,6 +176,13 @@ openclaw plugins install @openclaw/voice-call
 - 📧 发送目标：heil16070@gmail.com
 - 📝 内容来源：官方 Showcase、Discord 社区、X/Twitter
 
+### 2026-03-07
+- ✅ OpenClaw Top 50 报告生成
+- 📧 Gmail: heil16070@gmail.com (message_id: 19cc6230f37cc720)
+- 💬 企业微信：已发送 (errcode: 0)
+- 📊 技能数量：34 个最新技能
+- 🔥 热门：felo-youtube-subtitling, bstorms, super-search, supabase-db, xai
+
 ---
 
-*最后更新：2026-02-26 07:00*
+*最后更新：2026-03-07 10:29*

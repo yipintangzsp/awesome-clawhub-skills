@@ -1,0 +1,1 @@
+{"name":"testimonial-generator","version":"1.0.0","main":"index.js","bin":{"testimonial-generator":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

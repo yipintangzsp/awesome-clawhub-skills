@@ -1,0 +1,1 @@
+{"name":"github-analyzer","version":"1.0.0","main":"index.js","bin":{"github-analyzer":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

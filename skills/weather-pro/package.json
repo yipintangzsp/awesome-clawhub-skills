@@ -1,0 +1,8 @@
+{
+  "name": "weather-pro",
+  "version": "1.0.0",
+  "description": "收费版专业天气预报",
+  "main": "index.js",
+  "bin": { "weather-pro": "./index.js" },
+  "dependencies": { "node-fetch": "^2.7.0" }
+}

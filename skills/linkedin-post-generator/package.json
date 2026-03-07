@@ -1,0 +1,1 @@
+{"name":"linkedin-post-generator","version":"1.0.0","description":"LinkedIn 帖子生成器 - 生成专业帖子和文案","main":"index.js","bin":{"linkedin-post-generator":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

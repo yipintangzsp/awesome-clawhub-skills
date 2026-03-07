@@ -1,0 +1,1 @@
+{"name":"markdown-editor","version":"1.0.0","main":"index.js","bin":{"markdown-editor":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

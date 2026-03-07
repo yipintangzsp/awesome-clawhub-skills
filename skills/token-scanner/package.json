@@ -1,0 +1,11 @@
+{
+  "name": "token-scanner",
+  "version": "1.0.0",
+  "description": "新币安全检测专家 - LP 流动性/合约权限/持币分布深度分析",
+  "main": "index.js",
+  "bin": { "token-scanner": "./index.js" },
+  "dependencies": { "node-fetch": "^2.7.0" },
+  "keywords": ["链上安全", "代币检测", "rug pull", "DeFi", "加密货币"],
+  "author": "",
+  "license": "MIT"
+}

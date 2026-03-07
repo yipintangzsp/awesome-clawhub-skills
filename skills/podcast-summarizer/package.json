@@ -1,0 +1,1 @@
+{"name":"podcast-summarizer","version":"1.0.0","main":"index.js","bin":{"podcast-summarizer":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

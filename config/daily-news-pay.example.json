@@ -1,0 +1,8 @@
+{
+  "skillpay_api_key": "YOUR_SKILLPAY_API_KEY",
+  "price_per_call": 0.5,
+  "monthly_subscription": 9.9,
+  "news_sources": ["36kr", "hackernews", "techcrunch"],
+  "channel": "feishu",
+  "channel_id": "your_channel_id"
+}

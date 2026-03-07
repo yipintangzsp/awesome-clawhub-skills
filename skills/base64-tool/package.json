@@ -1,0 +1,1 @@
+{"name":"base64-tool","version":"1.0.0","main":"index.js","bin":{"base64-tool":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

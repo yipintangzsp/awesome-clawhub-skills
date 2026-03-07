@@ -92,6 +92,26 @@
     "clawfeed-2": {
       "version": "0.1.0",
       "installedAt": 1772243509821
+    },
+    "brave-search": {
+      "version": "1.0.1",
+      "installedAt": 1772527435475
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1772527467056
+    },
+    "weather": {
+      "version": "1.0.0",
+      "installedAt": 1772527481609
+    },
+    "miniflux-news": {
+      "version": "0.1.0",
+      "installedAt": 1772527740282
+    },
+    "resume-builder": {
+      "version": "1.0.0",
+      "installedAt": 1772527791305
     }
   }
 }

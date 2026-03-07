@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "bootstrap-extra-files": {
+      "enabled": true,
+      "paths": []
+    }
+  }
+}
