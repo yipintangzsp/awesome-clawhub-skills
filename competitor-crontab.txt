@@ -1,0 +1,43 @@
+# ClawHub 竞争情报监控系统 - Crontab 配置
+# 安装方法：crontab /path/to/competitor-crontab.txt
+
+# 环境变量
+SHELL=/bin/bash
+PATH=/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin
+MAILTO=""
+
+# ============ 监控任务 ============
+
+# 每天上午 9 点执行完整监控（避开凌晨和深夜）
+0 9 * * * cd /Users/admin/.openclaw/workspace && ./competitor-monitor.sh >> /Users/admin/.openclaw/workspace/competitor-data/cron.log 2>&1
+
+# 每周一上午 10 点生成周报（在日报基础上）
+0 10 * * 1 cd /Users/admin/.openclaw/workspace && python3 market-analyzer.py ./competitor-data $(date +\%Y-\%m-\%d_\%H-\%M-\%S) >> /Users/admin/.openclaw/workspace/competitor-data/weekly.log 2>&1
+
+# 每周三下午 3 点执行机会分析
+0 15 * * 3 cd /Users/admin/.openclaw/workspace && python3 opportunity-finder.py ./competitor-data $(date +\%Y-\%m-\%d_\%H-\%M-\%S) >> /Users/admin/.openclaw/workspace/competitor-data/opportunity.log 2>&1
+
+# ============ 维护任务 ============
+
+# 每天凌晨 2 点清理 30 天前的旧数据
+0 2 * * * find /Users/admin/.openclaw/workspace/competitor-data -name "*.json" -mtime +30 -delete >> /Users/admin/.openclaw/workspace/competitor-data/cleanup.log 2>&1
+
+# 每周日上午 8 点清理日志文件（保留最近 7 天）
+0 8 * * 0 find /Users/admin/.openclaw/workspace/competitor-data -name "*.log" -mtime +7 -delete
+
+# ============ 通知任务（可选） ============
+
+# 每周一上午 11 点发送周报摘要到飞书（需要配置消息工具）
+# 0 11 * * 1 cd /Users/admin/.openclaw/workspace && ./send-weekly-report.sh
+
+# ============ 说明 ============
+# 1. 安装 crontab: crontab /Users/admin/.openclaw/workspace/competitor-crontab.txt
+# 2. 查看当前 crontab: crontab -l
+# 3. 编辑 crontab: crontab -e
+# 4. 删除 crontab: crontab -r
+# 5. 查看 cron 日志：tail -f /var/log/cron.log (macOS) 或 journalctl -u cron (Linux)
+#
+# 注意：
+# - 时间格式：分钟 小时 日期 月份 星期
+# - 所有时间使用系统时区（Asia/Shanghai）
+# - 确保脚本有执行权限：chmod +x competitor-monitor.sh

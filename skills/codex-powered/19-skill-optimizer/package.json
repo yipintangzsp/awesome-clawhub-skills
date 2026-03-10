@@ -1,0 +1,11 @@
+{
+  "name": "skill-optimizer",
+  "version": "1.0.0",
+  "description": "AI-powered optimizer for OpenClaw Skills",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "keywords": ["codex", "skill", "optimization", "skillpay"],
+  "author": "张 sir",
+  "license": "MIT",
+  "dependencies": { "openai": "^4.0.0" }
+}

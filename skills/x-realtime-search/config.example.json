@@ -1,0 +1,33 @@
+{
+  "grokBridge": {
+    "url": "http://localhost:3000",
+    "apiKey": "your-grok-api-key-here"
+  },
+  "search": {
+    "defaultLimit": 20,
+    "maxLimit": 100,
+    "defaultTimeRange": "24h",
+    "cacheTTL": 300
+  },
+  "sentiment": {
+    "enabled": true,
+    "model": "qwen3.5-plus",
+    "thresholds": {
+      "positive": 0.6,
+      "negative": 0.4
+    }
+  },
+  "skillpay": {
+    "skillId": "x-realtime-search",
+    "pricing": {
+      "single": 10,
+      "monthly": 99,
+      "yearly": 999
+    },
+    "currency": "CNY"
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/x-search.log"
+  }
+}

@@ -1,0 +1,1 @@
+{"name":"code-comment-writer","version":"1.0.0","main":"index.js","bin":{"code-comment-writer":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

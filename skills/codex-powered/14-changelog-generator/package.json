@@ -1,0 +1,11 @@
+{
+  "name": "changelog-generator",
+  "version": "1.0.0",
+  "description": "AI-powered changelog generator from Git history",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "keywords": ["codex", "changelog", "git", "skillpay"],
+  "author": "张 sir",
+  "license": "MIT",
+  "dependencies": { "openai": "^4.0.0" }
+}

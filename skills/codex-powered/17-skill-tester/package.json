@@ -1,0 +1,11 @@
+{
+  "name": "skill-tester",
+  "version": "1.0.0",
+  "description": "AI-powered test generator for OpenClaw Skills",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "keywords": ["codex", "skill", "testing", "skillpay"],
+  "author": "张 sir",
+  "license": "MIT",
+  "dependencies": { "openai": "^4.0.0" }
+}

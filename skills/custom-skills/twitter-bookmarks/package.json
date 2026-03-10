@@ -1,0 +1,16 @@
+{
+  "name": "twitter-bookmarks",
+  "version": "1.0.0",
+  "description": "Twitter 书签管理助手 - 每天定时获取 Twitter 书签更新",
+  "main": "fetch_bookmarks.js",
+  "scripts": {
+    "sync": "./sync_bookmarks.sh",
+    "view": "./view_bookmarks.sh",
+    "install-db": "npm install sqlite3"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.0"
+  },
+  "author": "张 sir",
+  "license": "MIT"
+}

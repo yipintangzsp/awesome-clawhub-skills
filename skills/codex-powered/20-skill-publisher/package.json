@@ -1,0 +1,11 @@
+{
+  "name": "skill-publisher",
+  "version": "1.0.0",
+  "description": "AI-powered OpenClaw Skill publisher for ClawHub",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "keywords": ["codex", "skill", "publish", "clawhub", "skillpay"],
+  "author": "张 sir",
+  "license": "MIT",
+  "dependencies": { "openai": "^4.0.0" }
+}

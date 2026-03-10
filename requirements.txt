@@ -1,0 +1,36 @@
+# ChatGPT 无限额度自动化系统依赖
+
+# 浏览器自动化
+playwright>=1.40.0
+selenium>=4.15.0
+
+# 邮箱处理
+imaplib2>=3.0.6
+email-validator>=2.1.0
+
+# 数据库
+sqlite3  # Python 内置
+
+# 加密
+cryptography>=41.0.0
+
+# 配置
+pyyaml>=6.0.1
+
+# HTTP 请求
+requests>=2.31.0
+
+# 工具
+python-dotenv>=1.0.0
+click>=8.1.0
+
+# 日志
+loguru>=0.7.0
+
+# 数据处理
+pandas>=2.0.0
+
+# 可选：用于高级功能
+# aiohttp>=3.9.0  # 异步 HTTP
+# redis>=5.0.0    # 缓存和队列
+# celery>=5.3.0   # 分布式任务

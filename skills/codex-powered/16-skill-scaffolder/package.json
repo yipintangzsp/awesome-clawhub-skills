@@ -1,0 +1,11 @@
+{
+  "name": "skill-scaffolder",
+  "version": "1.0.0",
+  "description": "AI-powered OpenClaw Skill scaffolder",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "keywords": ["codex", "skill", "scaffold", "skillpay"],
+  "author": "张 sir",
+  "license": "MIT",
+  "dependencies": { "openai": "^4.0.0" }
+}

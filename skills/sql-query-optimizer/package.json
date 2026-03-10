@@ -1,0 +1,1 @@
+{"name":"sql-query-optimizer","version":"1.0.0","main":"index.js","bin":{"sql-query-optimizer":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

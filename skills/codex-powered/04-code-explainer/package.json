@@ -1,0 +1,11 @@
+{
+  "name": "code-explainer",
+  "version": "1.0.0",
+  "description": "AI-powered code explanation using Codex",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "keywords": ["codex", "code-explanation", "ai", "skillpay"],
+  "author": "张 sir",
+  "license": "MIT",
+  "dependencies": { "openai": "^4.0.0" }
+}

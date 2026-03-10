@@ -1,0 +1,11 @@
+{
+  "name": "bash-automation",
+  "version": "1.0.0",
+  "description": "AI-powered Bash script generator using Codex",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "keywords": ["codex", "bash", "automation", "skillpay"],
+  "author": "张 sir",
+  "license": "MIT",
+  "dependencies": { "openai": "^4.0.0" }
+}

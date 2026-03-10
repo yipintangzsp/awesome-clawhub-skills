@@ -1,40 +1,18 @@
-# TOOLS.md - Local Notes
+# TOOLS.md — 工具配置
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+## 风险动作确认机制
+以下操作需用户确认：
+- ⚠️ 发送邮件/推文/公开消息
+- ⚠️ 删除文件（用 `trash` 而非 `rm`）
+- ⚠️ 外部数据发送
+- ⚠️ 不确定后果的操作
 
-## What Goes Here
+## 环境配置
+- **Shell**：zsh
+- **Node**：v22.22.0
+- **模型**：bailian/qwen3.5-plus
+- **通道**：feishu
 
-Things like:
-
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
-
-## Examples
-
-```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.
+## 技能使用
+- 先查 `SKILL.md` 再用工具
+- 本地配置优先于通用示例

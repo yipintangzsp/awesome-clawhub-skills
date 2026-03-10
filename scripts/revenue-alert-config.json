@@ -1,0 +1,43 @@
+{
+  "alert_threshold": 30,
+  "alert_email": "zhangsir@example.com",
+  "feishu_webhook": "",
+  "check_interval_minutes": 60,
+  "report_schedule": {
+    "daily": "20:00",
+    "weekly": "Sunday 21:00",
+    "monthly": "1st 09:00"
+  },
+  "notification_settings": {
+    "enable_feishu": true,
+    "enable_email": true,
+    "enable_sound": false
+  },
+  "thresholds": {
+    "income_drop_warning": -30,
+    "income_drop_critical": -50,
+    "income_spike_warning": 50,
+    "income_spike_critical": 100
+  },
+  "optimization_rules": {
+    "price_increase_threshold": {
+      "downloads_per_day": 10,
+      "income_per_day": 50,
+      "suggested_increase_pct": 30
+    },
+    "skill_removal_threshold": {
+      "downloads_per_week": 5,
+      "income_per_week": 20
+    },
+    "featured_skill_threshold": {
+      "downloads_per_day": 20,
+      "income_per_day": 100
+    }
+  },
+  "targets": {
+    "daily_income": 200,
+    "monthly_income": 5000,
+    "daily_downloads": 50,
+    "monthly_downloads": 1000
+  }
+}

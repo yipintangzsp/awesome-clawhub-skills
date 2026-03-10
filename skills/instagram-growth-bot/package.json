@@ -1,0 +1,1 @@
+{"name":"instagram-growth-bot","version":"1.0.0","main":"index.js","bin":{"instagram-growth-bot":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

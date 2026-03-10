@@ -1,0 +1,43 @@
+{
+  "monitor": {
+    "name": "ClawHub 服务器状态监控",
+    "version": "1.0.0",
+    "checkIntervalMinutes": 60,
+    "enabled": true
+  },
+  "server": {
+    "name": "ClawHub Registry",
+    "checkUrl": "https://clawhub.com/api/health",
+    "fallbackUrl": "https://clawhub.com",
+    "timeoutSeconds": 30,
+    "retryCount": 3,
+    "retryDelaySeconds": 5
+  },
+  "notifications": {
+    "feishu": {
+      "enabled": true,
+      "webhookUrl": "https://open.feishu.cn/open-apis/bot/v2/hook/YOUR_WEBHOOK_TOKEN",
+      "notifyOnRecovery": true,
+      "notifyOnFailure": true,
+      "notifyOnRevenueData": true
+    },
+    "messageTemplate": {
+      "recovery": "🟢 ClawHub 服务器已恢复！\n\n恢复时间：{{recoveryTime}}\n停机时长：{{downtimeDuration}}\n积压数据：{{pendingDataCount}} 条",
+      "failure": "🔴 ClawHub 服务器检测失败！\n\n检测时间：{{checkTime}}\n错误信息：{{errorMessage}}\n重试次数：{{retryCount}}",
+      "revenueReport": "💰 ClawHub 收入补报\n\n统计周期：{{period}}\n补报收入：¥{{revenue}}\n数据条数：{{dataCount}}\n生成时间：{{reportTime}}"
+    }
+  },
+  "revenue": {
+    "autoFetch": true,
+    "fetchEndpoint": "https://clawhub.com/api/revenue/pending",
+    "reportFormat": "markdown",
+    "storagePath": "./revenue-reports"
+  },
+  "state": {
+    "lastCheckTime": null,
+    "lastStatus": "unknown",
+    "consecutiveFailures": 0,
+    "lastRecoveryTime": null,
+    "totalDowntimeMinutes": 0
+  }
+}

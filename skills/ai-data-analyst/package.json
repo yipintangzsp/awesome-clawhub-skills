@@ -1,0 +1,1 @@
+{"name":"ai-data-analyst","version":"1.0.0","main":"index.js","bin":{"ai-data-analyst":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

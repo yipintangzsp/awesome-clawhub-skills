@@ -1,0 +1,1 @@
+{"name":"git-commit-message","version":"1.0.0","main":"index.js","bin":{"git-commit-message":"./index.js"},"dependencies":{"node-fetch":"^2.7.0"}}

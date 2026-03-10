@@ -1,0 +1,7 @@
+{
+  "output_dir": "./output",
+  "top_n": 50,
+  "include_score": true,
+  "notify_channel": null,
+  "cron_schedule": "0 9 * * *"
+}

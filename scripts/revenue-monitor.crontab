@@ -1,0 +1,74 @@
+# ============================================================================
+# SkillPay 收入监控系统 - Crontab 配置
+# 最后更新：2026-03-09
+# 
+# 安装方法：
+#   crontab /Users/admin/.openclaw/workspace/scripts/revenue-monitor.crontab
+# 
+# 验证安装：
+#   crontab -l
+# 
+# 日志位置：
+#   ~/Library/Logs/skillpay-revenue-monitor.log
+# ============================================================================
+
+# 环境变量
+SHELL=/bin/zsh
+PATH=/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin
+HOME=/Users/admin
+
+# ==================== 收入监控核心任务 ====================
+
+# 【核心】每小时 :00 检查收入数据并检测异常波动
+0 * * * * /Users/admin/.openclaw/workspace/scripts/revenue-monitor-pro.sh check >> ~/Library/Logs/skillpay-revenue-monitor.log 2>&1
+
+# 【核心】每天 20:00 生成每日收入报告并推送
+0 20 * * * /Users/admin/.openclaw/workspace/scripts/revenue-monitor-pro.sh daily >> ~/Library/Logs/skillpay-revenue-monitor.log 2>&1
+
+# 【核心】每周日 21:00 生成每周收入报告
+0 21 * * 0 /Users/admin/.openclaw/workspace/scripts/revenue-monitor-pro.sh weekly >> ~/Library/Logs/skillpay-revenue-monitor.log 2>&1
+
+# 【核心】每月 1 号 9:00 生成每月收入报告
+0 9 1 * * /Users/admin/.openclaw/workspace/scripts/revenue-monitor-pro.sh monthly >> ~/Library/Logs/skillpay-revenue-monitor.log 2>&1
+
+# ==================== 辅助任务 ====================
+
+# 每 6 小时：检查 Skill 表现，更新统计数据
+0 */6 * * * /Users/admin/.openclaw/workspace/scripts/skillpay-analytics-daily.sh >> ~/Library/Logs/skillpay-analytics.log 2>&1
+
+# 每天 14:00：分析爆款 Skill，生成优化建议
+0 14 * * * /Users/admin/.openclaw/workspace/scripts/skillpay-auto-optimize.sh >> ~/Library/Logs/skillpay-optimize.log 2>&1
+
+# 每天 16:00：基于优化建议批量创建新 Skill
+0 16 * * * cd /Users/admin/.openclaw/workspace && openclaw run "根据 skillpay-optimize.log 中的优化建议，批量创建 5-10 个新 SkillPay Skill" >> ~/Library/Logs/skillpay-create.log 2>&1
+
+# ==================== 通知和推送 ====================
+
+# 每天 9:00：发送晨间收入简报到飞书
+0 9 * * * /Users/admin/.openclaw/workspace/scripts/skillpay-morning-promo.sh >> ~/Library/Logs/skillpay-morning-promo.log 2>&1
+
+# 每天 20:30：发送日报到飞书/邮件（日报生成后 30 分钟）
+30 20 * * * cd /Users/admin/.openclaw/workspace && openclaw run "读取 reports/daily-revenue-$(date +%%Y-%%m-%%d).md，总结今日收入亮点和优化建议，发送到飞书" >> ~/Library/Logs/skillpay-notification.log 2>&1
+
+# ==================== 数据维护 ====================
+
+# 每天凌晨 3:00：清理过期数据（保留 90 天）
+0 3 * * * /Users/admin/.openclaw/workspace/scripts/revenue-monitor-pro.sh cleanup >> ~/Library/Logs/skillpay-revenue-monitor.log 2>&1
+
+# 每周日 23:00：备份收入数据
+0 23 * * 0 cp /Users/admin/.openclaw/workspace/data/revenue/revenue_history.json /Users/admin/.openclaw/workspace/backups/revenue_history_$(date +%%Y%%m%%d).json 2>> ~/Library/Logs/skillpay-backup.log
+
+# ==================== 系统监控 ====================
+
+# 每小时 :30：检查脚本运行状态
+30 * * * * ps aux | grep revenue-monitor-pro.sh | grep -v grep > /dev/null || echo "[$(date)] 监控脚本未运行" >> ~/Library/Logs/skillpay-monitor-status.log
+
+# 每天 8:00：检查磁盘空间（确保有足够空间存储数据）
+0 8 * * * df -h /Users/admin | awk 'NR==2 {if ($5+0 > 90) print "⚠️ 磁盘空间不足：" $5}' >> ~/Library/Logs/skillpay-disk.log 2>&1
+
+# ==================== 与其他任务协调 ====================
+
+# 注意：以下任务已在主 crontab 中配置，此处不再重复
+# - auto-publish-skills.sh（每小时发布 Skill）
+# - cleanup-disk.sh（磁盘清理）
+# - update-openclaw.sh（系统更新）

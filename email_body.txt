@@ -1,0 +1,33 @@
+OpenClaw 社区使用案例日报
+日期：2026 年 3 月 10 日 星期二
+
+【社区动态摘要】
+
+📦 社区插件更新
+- WeChat 插件 (@icesword760/openclaw-wechat)：支持微信个人账号接入，通过 WeChatPadPro (iPad 协议) 实现文字、图片、文件交换，支持关键词触发对话
+- 社区插件提交标准：需发布至 npmjs、GitHub 开源、包含文档和 issue 追踪、有明确维护信号
+
+🔧 核心功能亮点
+- 多消息通道支持：WhatsApp、Telegram、Discord、iMessage 等
+- AI 编码代理集成：连接主流 AI 提供商 (OpenAI、Anthropic、Moonshot、Mistral、OpenRouter 等)
+- 自托管网关：单进程运行，本地部署，隐私可控
+- Cron 定时任务：支持自动化日报、心跳检查等定时操作
+
+📈 使用趋势
+- 自托管 AI 助手需求增长
+- 跨境电商/内容创作者采用率提升
+- SkillPay 技能变现矩阵成为热点 (目标月收入 ¥5,000-20,000)
+
+🔗 资源链接
+- 官方文档：https://docs.openclaw.ai
+- GitHub: https://github.com/openclaw/openclaw
+- 社区 Discord: https://discord.com/invite/clawd
+- 技能市场：https://clawhub.com
+
+【今日建议】
+- 检查 Gateway 服务状态：openclaw gateway status
+- 查看已安装技能：openclaw skills list
+- 关注 ClawHub 新技能发布
+
+---
+此邮件由 OpenClaw 定时任务自动生成 🐾

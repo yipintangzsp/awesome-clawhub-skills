@@ -1,0 +1,15 @@
+{
+  "name": "wechat-to-feishu",
+  "version": "1.0.0",
+  "description": "公众号文章搬运到飞书 - 自动抓取公众号文章并保存到飞书文档",
+  "main": "fetch_article.js",
+  "scripts": {
+    "sync": "./sync_to_feishu.sh",
+    "fetch": "node fetch_article.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "author": "张 sir",
+  "license": "MIT"
+}

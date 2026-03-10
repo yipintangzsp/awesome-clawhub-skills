@@ -1,0 +1,18 @@
+# ClawHub 自动提现 Cron 配置示例
+# 使用方法：
+# 1. 编辑此文件，调整执行时间
+# 2. 运行：crontab withdraw-cron.example
+# 3. 验证：crontab -l
+
+# 环境变量
+SHELL=/bin/zsh
+PATH=/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin
+
+# 每 6 小时检查一次余额（00:00, 06:00, 12:00, 18:00）
+0 */6 * * * cd /Users/admin/.openclaw/workspace && ./auto-withdraw.sh --check-only >> withdraw.log 2>&1
+
+# 每天凌晨 2 点检查提现状态
+0 2 * * * cd /Users/admin/.openclaw/workspace && python3 withdrawal-tracker.py --check-status >> withdraw.log 2>&1
+
+# 每周日生成提现报告
+0 9 * * 0 cd /Users/admin/.openclaw/workspace && python3 withdrawal-tracker.py --report --days 7 >> withdraw.log 2>&1

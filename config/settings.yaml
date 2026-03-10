@@ -1,0 +1,48 @@
+# ChatGPT 无限额度自动化系统配置
+# 复制此文件到 ~/.freemail/settings.yaml 并修改
+
+# 域名配置
+domain: yourdomain.com  # 替换为你的域名
+main_email: main@gmail.com  # 替换为主邮箱
+
+# Cloudflare 配置
+cloudflare:
+  zone_id: ""  # 自动获取或手动填写
+  account_id: ""
+  # API Token 存储在 ~/.freemail/cloudflare_credentials
+
+# 邮箱配置
+email:
+  imap_server: imap.gmail.com
+  imap_port: 993
+  # 密码使用应用专用密码，不要使用主密码
+
+# ChatGPT 配置
+chatgpt:
+  registration_count: 20  # 初始注册账号数量
+  usage_threshold: 0.2    # 20% 额度时切换账号
+  min_accounts: 5         # 保持最小活跃账号数
+  
+# 监控配置
+monitoring:
+  check_interval: 1800    # 30 分钟检查一次
+  auto_rotate: true       # 自动切换账号
+  notify_low_quota: true  # 低额度时通知
+  
+# Codex 配置
+codex:
+  api_key: ""  # 或设置 OPENAI_API_KEY 环境变量
+  model: gpt-4
+  output_dir: ./skills
+  
+# 日志配置
+logging:
+  level: INFO
+  file: logs/system.log
+  max_size: 10MB
+  backup_count: 5
+
+# 安全配置
+security:
+  encrypt_credentials: true  # 加密存储凭证
+  auto_delete_logs: 30       # 30 天后删除日志

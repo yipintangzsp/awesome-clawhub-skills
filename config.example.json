@@ -1,0 +1,56 @@
+{
+  "skillpay": {
+    "api_key": "YOUR_SKILLPAY_API_KEY",
+    "skill_ids": ["skill-001", "skill-002"],
+    "webhook_url": "https://your-server.com/webhook"
+  },
+  "platforms": {
+    "twitter": {
+      "enabled": true,
+      "api_key": "YOUR_TWITTER_API_KEY",
+      "api_secret": "YOUR_TWITTER_API_SECRET",
+      "access_token": "YOUR_TWITTER_ACCESS_TOKEN",
+      "post_times": ["09:00", "14:00", "20:00"],
+      "timezone": "Asia/Shanghai",
+      "max_posts_per_day": 5
+    },
+    "xiaohongshu": {
+      "enabled": true,
+      "api_key": "YOUR_XHS_API_KEY",
+      "post_times": ["08:00", "12:00", "19:00"],
+      "timezone": "Asia/Shanghai",
+      "max_posts_per_day": 3
+    },
+    "zhihu": {
+      "enabled": true,
+      "api_key": "YOUR_ZHIHU_API_KEY",
+      "post_times": ["10:00", "15:00", "21:00"],
+      "timezone": "Asia/Shanghai",
+      "max_posts_per_day": 3
+    }
+  },
+  "tracking": {
+    "enabled": true,
+    "metrics": ["impressions", "clicks", "conversions", "revenue"],
+    "report_interval": "daily",
+    "export_format": "csv",
+    "retention_days": 90
+  },
+  "optimization": {
+    "auto_optimize": true,
+    "min_ctr_threshold": 1.0,
+    "min_conversion_rate": 0.5,
+    "ab_test_enabled": true,
+    "optimization_interval": "daily"
+  },
+  "alerts": {
+    "enabled": true,
+    "email": "your-email@example.com",
+    "webhook": "https://your-server.com/alert",
+    "thresholds": {
+      "post_failure_count": 3,
+      "ctr_drop_percent": 50,
+      "conversion_drop_percent": 30
+    }
+  }
+}

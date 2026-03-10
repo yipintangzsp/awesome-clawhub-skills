@@ -1,0 +1,39 @@
+{
+  "_comment": "ClawHub 提现配置文件 - 请先填写以下信息",
+  
+  "_setup_instructions": [
+    "1. 在 ClawHub 网站绑定收款钱包：https://clawhub.ai/settings/payout",
+    "2. 获取 ClawHub API Token（如有）：https://clawhub.ai/settings/api",
+    "3. 填写下方配置项",
+    "4. 运行：chmod +x auto-withdraw.sh"
+  ],
+  
+  "withdraw_threshold": 1000,
+  "wallet_address": "",
+  "wallet_type": "crypto",
+  "crypto_network": "USDT-TRC20",
+  "clawhub_token": "",
+  "notify_channel": "",
+  
+  "_wallet_types": {
+    "crypto": "加密货币钱包（推荐）",
+    "alipay": "支付宝",
+    "wechat": "微信支付",
+    "bank": "银行转账"
+  },
+  
+  "_supported_networks": [
+    "USDT-TRC20",
+    "USDT-ERC20",
+    "USDC-ERC20",
+    "BTC",
+    "ETH"
+  ],
+  
+  "_notify_channel_info": {
+    "feishu": "飞书群聊 ID 或用户 ID",
+    "telegram": "Telegram Chat ID",
+    "discord": "Discord Channel ID",
+    "leave_empty": "留空则只发送系统通知"
+  }
+}

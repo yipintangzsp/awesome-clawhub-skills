@@ -1,6 +1,8 @@
 {
   "skillpay_api_key": "sk_5103840b1a434f6f9f0aafa023776c56ce0bf0caf47e2f02d7b5b2f4cd87f7c1",
-  "price_per_call": 8,
+  "price_per_call": 25,
   "currency": "CNY",
-  "service_type": "amazon_product_research"
+  "service_type": "amazon_product_research",
+  "monthly_price": 250,
+  "yearly_price": 2500
 }

@@ -1,0 +1,9 @@
+{
+  "api_key": "",
+  "api_secret": "",
+  "twitter_username": "",
+  "db_path": "./bookmarks.db",
+  "output_dir": "./reports",
+  "daily_report": true,
+  "cron_schedule": "0 8 * * *"
+}

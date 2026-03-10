@@ -1,0 +1,160 @@
+{
+  "version": "1.0",
+  "created_at": "2026-03-09T09:07:00+08:00",
+  "rate_limit": {
+    "max_per_hour": 5,
+    "current_hour_count": 0,
+    "last_reset": "2026-03-09 09:00",
+    "blocked_until": null
+  },
+  "queue": [
+    {
+      "priority": 1,
+      "skill_path": "skills/etsy-tag-generator",
+      "slug": "etsy-tag-generator",
+      "name": "Etsy Tag Generator",
+      "version": "1.0.0",
+      "status": "pending",
+      "retry_count": 0,
+      "last_attempt": null,
+      "error_message": null
+    },
+    {
+      "priority": 1,
+      "skill_path": "skills/cross-border-logistics-calculator",
+      "slug": "cross-border-logistics-calculator",
+      "name": "Cross Border Logistics Calculator",
+      "version": "1.0.0",
+      "status": "pending",
+      "retry_count": 0,
+      "last_attempt": null,
+      "error_message": null
+    },
+    {
+      "priority": 1,
+      "skill_path": "skills/amazon-keyword-tracker",
+      "slug": "amazon-keyword-tracker",
+      "name": "Amazon Keyword Tracker",
+      "version": "1.0.0",
+      "status": "pending",
+      "retry_count": 0,
+      "last_attempt": null,
+      "error_message": null
+    },
+    {
+      "priority": 1,
+      "skill_path": "skills/tiktok-hashtag-generator",
+      "slug": "tiktok-hashtag-generator",
+      "name": "TikTok Hashtag Generator",
+      "version": "1.0.0",
+      "status": "pending",
+      "retry_count": 0,
+      "last_attempt": null,
+      "error_message": null
+    },
+    {
+      "priority": 1,
+      "skill_path": "skills/youtube-thumbnail-ai",
+      "slug": "youtube-thumbnail-ai",
+      "name": "YouTube Thumbnail AI",
+      "version": "1.0.0",
+      "status": "pending",
+      "retry_count": 0,
+      "last_attempt": null,
+      "error_message": null
+    },
+    {
+      "priority": 2,
+      "skill_path": "skills/weibo-trending-tracker",
+      "slug": "weibo-trending-tracker",
+      "name": "Weibo Trending Tracker",
+      "version": "1.0.0",
+      "status": "pending",
+      "retry_count": 0,
+      "last_attempt": null,
+      "error_message": null
+    },
+    {
+      "priority": 2,
+      "skill_path": "skills/instagram-caption-magic",
+      "slug": "instagram-caption-magic",
+      "name": "Instagram Caption Magic",
+      "version": "1.0.0",
+      "status": "pending",
+      "retry_count": 0,
+      "last_attempt": null,
+      "error_message": null
+    },
+    {
+      "priority": 3,
+      "skill_path": "skills/ai-video-script",
+      "slug": "ai-video-script-pro",
+      "name": "AI Video Script Pro",
+      "version": "1.0.0",
+      "status": "pending_slug_fix",
+      "retry_count": 0,
+      "last_attempt": null,
+      "error_message": "Slug conflict: /aguo333/ai-video-script exists"
+    },
+    {
+      "priority": 3,
+      "skill_path": "skills/ai-seo-writer",
+      "slug": "ai-seo-writer-pro",
+      "name": "AI SEO Writer Pro",
+      "version": "1.0.0",
+      "status": "pending_slug_fix",
+      "retry_count": 0,
+      "last_attempt": null,
+      "error_message": "Slug conflict: /1kalin/ai-seo-writer exists"
+    },
+    {
+      "priority": 3,
+      "skill_path": "skills/xiaohongshu-viral-copy",
+      "slug": "xiaohongshu-copy-magic",
+      "name": "Xiaohongshu Copy Magic",
+      "version": "1.0.0",
+      "status": "pending_slug_fix",
+      "retry_count": 0,
+      "last_attempt": null,
+      "error_message": "Slug conflict: /hs365/xiaohongshu-viral-copy exists"
+    }
+  ],
+  "published": [
+    {
+      "skill_path": "skills/ai-writing-assistant",
+      "slug": "ai-writing-assistant",
+      "version_id": "k974616agw6bsmaxje96f3xeyd82hamc",
+      "published_at": "2026-03-09T07:42:00+08:00",
+      "status": "success"
+    },
+    {
+      "skill_path": "skills/ai-prompt-generator",
+      "slug": "ai-prompt-generator",
+      "version_id": "k97fq9a6amzt5bv9ps95gv3f0582hm4m",
+      "published_at": "2026-03-09T07:42:00+08:00",
+      "status": "success"
+    },
+    {
+      "skill_path": "skills/ai-email-writer",
+      "slug": "ai-email-writer",
+      "version_id": "k971p4x9sxp111tazytezhqxtd82h2y1",
+      "published_at": "2026-03-09T07:42:00+08:00",
+      "status": "success"
+    },
+    {
+      "skill_path": "skills/ebay-product-research",
+      "slug": "ebay-product-research",
+      "version_id": "k971k4kf5n8ad3716g84hpdskn82hh9y",
+      "published_at": "2026-03-09T07:42:00+08:00",
+      "status": "success"
+    },
+    {
+      "skill_path": "skills/shopify-seo-optimizer",
+      "slug": "shopify-seo-optimizer",
+      "version_id": "k97aacvyxg1dm63zjx5ysk20y182hqzd",
+      "published_at": "2026-03-09T07:42:00+08:00",
+      "status": "success"
+    }
+  ],
+  "logs": []
+}

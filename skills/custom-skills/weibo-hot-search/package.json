@@ -1,0 +1,14 @@
+{
+  "name": "weibo-hot-search",
+  "version": "1.0.0",
+  "description": "微博热搜爬虫 - 每天自动爬取微博实时热搜榜",
+  "main": "fetch_hot_search.js",
+  "scripts": {
+    "fetch": "./fetch_hot_search.sh"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "author": "张 sir",
+  "license": "MIT"
+}

@@ -1,0 +1,59 @@
+{
+  "skills": [
+    {
+      "name": "🎯 爆款标题魔法师",
+      "downloads": 12,
+      "income": 36,
+      "price": 5
+    },
+    {
+      "name": "🔍 新币保命扫描器",
+      "downloads": 10,
+      "income": 50,
+      "price": 9
+    },
+    {
+      "name": "🪂 空投资格检测",
+      "downloads": 8,
+      "income": 40,
+      "price": 8
+    },
+    {
+      "name": "📝 Prompt 降维打击",
+      "downloads": 6,
+      "income": 30,
+      "price": 5
+    },
+    {
+      "name": "🐋 Whale 地址追踪",
+      "downloads": 5,
+      "income": 25,
+      "price": 9
+    },
+    {
+      "name": "🔍 Perplexica AI 搜索",
+      "downloads": 5,
+      "income": 15,
+      "price": 3
+    },
+    {
+      "name": "🖼️ NFT 地板价监控",
+      "downloads": 4,
+      "income": 12,
+      "price": 5
+    },
+    {
+      "name": "📦 亚马逊选品助手",
+      "downloads": 3,
+      "income": 24,
+      "price": 15
+    },
+    {
+      "name": "🎓 名校文书润色",
+      "downloads": 2,
+      "income": 30,
+      "price": 29
+    }
+  ],
+  "last_updated": 1773041376
+}

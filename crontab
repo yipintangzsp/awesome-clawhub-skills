@@ -15,3 +15,31 @@
 
 # 每周日凌晨 3 点：深度清理（额外运行一次）
 0 3 * * 0 /Users/admin/.openclaw/workspace/scripts/cleanup-disk.sh >> ~/Library/Logs/cleanup-disk.log 2>&1
+
+# ==================== SkillPay 赚钱任务（核心） ====================
+
+# 【任务 1】每小时 :00 发布 5 个 Skill（绕过限流）- 使用新版自动发布脚本
+0 * * * * /Users/admin/.openclaw/workspace/scripts/auto-publish-skills.sh --notify >> ~/Library/Logs/skillpay-auto-publish.log 2>&1
+
+# 【任务 2】每小时 :30 检查收入数据
+30 * * * * /Users/admin/.openclaw/workspace/scripts/skillpay-revenue-check.sh >> ~/Library/Logs/skillpay-revenue.log 2>&1
+
+# 【任务 3】每天 9:00 发布引流文章（晨间黄金时间）
+0 9 * * * /Users/admin/.openclaw/workspace/scripts/skillpay-morning-promo.sh >> ~/Library/Logs/skillpay-morning-promo.log 2>&1
+
+# 【任务 4】每天 14:00 爆款数据分析
+0 14 * * * /Users/admin/.openclaw/workspace/scripts/skillpay-analytics-daily.sh >> ~/Library/Logs/skillpay-analytics.log 2>&1
+
+# 【任务 5】每天 20:00 生成收入日报
+0 20 * * * /Users/admin/.openclaw/workspace/scripts/skillpay-daily-report.sh >> ~/Library/Logs/skillpay-daily-report.log 2>&1
+
+# ==================== SkillPay 辅助任务 ====================
+
+# 每周日 21 点：生成收入周报
+0 21 * * 0 cd ~/.openclaw/workspace && openclaw run "使用 revenue-monitor skill 生成本周收入周报，分析趋势和优化建议" >> ~/Library/Logs/skillpay-weekly-report.log 2>&1
+
+# 每天 16 点：批量创建新 Skill（基于优化建议）
+0 16 * * * cd ~/.openclaw/workspace && openclaw run "根据 skillpay-analytics.log 中的优化建议，批量创建 5-10 个新 SkillPay Skill" >> ~/Library/Logs/skillpay-create.log 2>&1
+
+# 每 6 小时：检查 ClawHub 热门 Skill 趋势，调整策略
+0 */6 * * * cd ~/.openclaw/workspace && openclaw run "搜索 ClawHub 热门 Skill 趋势，分析竞品，输出差异化建议" >> ~/Library/Logs/skillpay-trend.log 2>&1

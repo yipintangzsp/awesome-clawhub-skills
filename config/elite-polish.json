@@ -1,6 +1,8 @@
 {
   "skillpay_api_key": "sk_5103840b1a434f6f9f0aafa023776c56ce0bf0caf47e2f02d7b5b2f4cd87f7c1",
-  "price_per_call": 15,
+  "price_per_call": 49,
   "currency": "CNY",
-  "service_type": "document_polishing"
+  "service_type": "document_polishing",
+  "monthly_price": 490,
+  "yearly_price": 4900
 }

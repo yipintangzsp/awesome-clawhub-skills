@@ -1,0 +1,12 @@
+{
+  "feishu_doc_token": "",
+  "parent_folder_token": "",
+  "articles": [
+    {
+      "url": "https://mp.weixin.qq.com/s/示例文章链接",
+      "title": "示例文章标题"
+    }
+  ],
+  "cron_schedule": "0 2 * * *",
+  "cache_enabled": true
+}

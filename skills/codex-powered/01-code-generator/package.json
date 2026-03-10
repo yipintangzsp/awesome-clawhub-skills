@@ -1,0 +1,16 @@
+{
+  "name": "code-generator",
+  "version": "1.0.0",
+  "description": "AI-powered code generator using Codex",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": ["codex", "code-generation", "ai", "skillpay"],
+  "author": "张 sir",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.0.0"
+  }
+}

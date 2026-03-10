@@ -1,0 +1,28 @@
+{
+  "_comment": "SkillPay 自动推广配置文件",
+  "_instructions": "复制此文件为 skillpay-promo-config.json 并填写真实 API 密钥",
+  
+  "twitter": {
+    "enabled": false,
+    "twitter_api_key": "YOUR_TWITTER_API_KEY",
+    "twitter_api_secret": "YOUR_TWITTER_API_SECRET",
+    "twitter_access_token": "YOUR_TWITTER_ACCESS_TOKEN",
+    "twitter_access_token_secret": "YOUR_TWITTER_ACCESS_TOKEN_SECRET"
+  },
+  
+  "zhihu": {
+    "enabled": false,
+    "zhihu_token": "YOUR_ZHIHU_ACCESS_TOKEN"
+  },
+  
+  "xiaohongshu": {
+    "enabled": false,
+    "_note": "小红书无官方 API，内容将保存到 pending-posts 文件夹手动发布"
+  },
+  
+  "settings": {
+    "check_interval_hours": 1,
+    "min_downloads_to_promote": 5,
+    "log_level": "info"
+  }
+}
