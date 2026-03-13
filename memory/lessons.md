@@ -59,6 +59,31 @@ _提升效率的技巧和最佳实践_
 **耗时**：2 分钟（人工查找需数小时）
 **标签**：#美国地址 #atmb #自动化 #跨境电商
 
+### 2026-03-13: GitHub Secret Scanning 导致备份失败
+**问题**：`package.json` 中 GitHub PAT token 被 Secret Scanning 检测到，push 被拦截
+**解决**：
+1. 清理 `package.json` 中的 token（改用纯 HTTPS URL）
+2. 提交修复 commit
+3. 去 GitHub Security 页面手动放行：`/security/secret-scanning/unblock-secret/XXX`
+**预防**：
+- 永远不要把 PAT 写在代码/配置文件中
+- 用 `.gitignore` 忽略敏感文件
+- 用环境变量或密钥管理工具
+**标签**：#github #安全 #备份 #token
+
+### 2026-03-10: Gumroad 产品打包经验
+**问题**：如何快速创建可销售的数字产品
+**解决**：
+1. 选 12 个成熟工具（链上 4+ 内容 4+ 电商 4）
+2. 打包成 zip + 使用指南 + 营销模板
+3. Gumroad 上架（Wise 收款）
+4. 定价策略：Early Bird $49 → Regular $99
+**关键**：
+- 卖工具包比卖服务更被动
+- Wise + Gumroad 组合最优（汇率好、手续费低）
+- 英国账户 + 英国手机号更可信
+**标签**：#gumroad #数字产品 #被动收入 #跨境
+
 ---
 
-*最后更新：2026-03-13*
+*最后更新：2026-03-14*
