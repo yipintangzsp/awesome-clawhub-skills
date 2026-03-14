@@ -1,0 +1,43 @@
+# 敏感信息
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.crt
+*secret*
+*token*
+*password*
+
+# API Keys
+api_key.txt
+apikey.txt
+credentials.json
+service-account.json
+
+# 日志
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 备份
+*.backup
+*.backup.*
