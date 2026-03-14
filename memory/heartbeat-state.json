@@ -9,6 +9,7 @@
   "backupStatus": "BACKUP_FAILED",
   "googleOAuthStatus": "EXPIRED",
   "notes": [
+    "2026-03-14 08:45: 修复 git remote URL (移除 PAT token)，备份失败原因为 GitHub 网络连接超时",
     "2026-03-14 00:22: 执行记忆维护 - 归档 Gumroad/FluxA/美国地址项目到 projects.md，添加 3 条经验到 lessons.md",
     "2026-03-11 11:57: Google OAuth 确认过期 (token 超时)，需重新授权 gog",
     "2026-03-11 11:51: 备份失败 (GitHub HTTP2 错误) + Google OAuth 过期，需用户处理",
