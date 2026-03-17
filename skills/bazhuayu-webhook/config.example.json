@@ -1,0 +1,8 @@
+{
+  "webhookUrl": "https://api-rpa.bazhuayu.com/api/v1/bots/webhooks/YOUR_WEBHOOK_ID/invoke",
+  "signatureKey": "YOUR_SIGNATURE_KEY",
+  "defaultParams": {
+    "targetSheet": "小红书数据采集",
+    "notifyOnComplete": true
+  }
+}
