@@ -9,6 +9,7 @@
   "backupStatus": "BACKUP_FAILED",
   "googleOAuthStatus": "EXPIRED",
   "notes": [
+    "2026-03-19 08:01: 已通知用户 - 备份失败 + Google OAuth 过期 + 记忆维护超期",
     "2026-03-18 05:10: 备份失败 (SSH 密钥未授权 GitHub) - 待 08:00 后通知用户",
     "2026-03-16 08:13: 已通知用户 - 备份失败 (SSH 密钥) + Google OAuth 过期",
     "2026-03-16 08:13: 备份失败 - SSH 密钥未授权 GitHub (需重新添加公钥到 GitHub 账户)",
