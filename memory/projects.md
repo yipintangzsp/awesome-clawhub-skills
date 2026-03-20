@@ -41,8 +41,16 @@ _记录各项目的当前状态和待办事项。_
 
 ### Google Workspace CLI 集成
 - **状态**：已安装 ✅
-- **问题**：OAuth 过期需重新授权
-- **最后更新**：2026-03-10
+- **问题**：OAuth 过期需重新授权（2026-03-20 日报发送失败）
+- **待办**：运行 `gog auth add heil16070@gmail.com --services gmail` 重新授权
+- **最后更新**：2026-03-20
+
+### 慢雾安全加固 v2.8
+- **状态**：已部署 ✅
+- **进展**：夜间巡检 cron 已注册 (03:00 Asia/Shanghai)
+- **文件**：`scripts/nightly-security-audit.sh`, `.config-baseline.sha256`, `.skill-baseline.sha256`
+- **待办**：脚本锁定 (`sudo chflags schg` - 需用户密码)
+- **最后更新**：2026-03-18
 
 ---
 

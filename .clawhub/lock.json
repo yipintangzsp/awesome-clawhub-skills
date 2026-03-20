@@ -112,6 +112,10 @@
     "resume-builder": {
       "version": "1.0.0",
       "installedAt": 1772527791305
+    },
+    "openmaic": {
+      "version": "0.2.1",
+      "installedAt": 1773973038043
     }
   }
 }

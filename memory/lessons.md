@@ -86,4 +86,18 @@ _提升效率的技巧和最佳实践_
 
 ---
 
-*最后更新：2026-03-14*
+### 2026-03-20: Gmail OAuth Token 过期处理
+**问题**：Google OAuth token 过期导致 cron 日报发送失败
+**解决**：
+```bash
+gog auth add heil16070@gmail.com --services gmail
+```
+**预防**：
+- OAuth token 有有效期，需定期刷新
+- 建议配置自动刷新机制或设置到期提醒
+- 关键服务（如邮件发送）应监控 auth 状态
+**标签**：#google #oauth #认证 #cron
+
+---
+
+*最后更新：2026-03-20*

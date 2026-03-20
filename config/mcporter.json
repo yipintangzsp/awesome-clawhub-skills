@@ -17,6 +17,12 @@
     },
     "zread": {
       "baseUrl": "https://zread.ai/mcp"
+    },
+    "newsnow": {
+      "command": "newsnow-mcp-server",
+      "env": {
+        "BASE_URL": "https://newsnow.busiyi.world"
+      }
     }
   },
   "imports": []

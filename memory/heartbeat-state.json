@@ -1,5 +1,5 @@
 {
-  "lastMemoryMaintenance": "2026-03-14",
+  "lastMemoryMaintenance": "2026-03-20",
   "lastChecks": {
     "email": "2026-03-11T11:51:00+08:00",
     "calendar": "2026-03-11T11:51:00+08:00",
@@ -9,7 +9,9 @@
   "backupStatus": "BACKUP_FAILED",
   "googleOAuthStatus": "EXPIRED",
   "notes": [
-    "2026-03-19 08:01: 已通知用户 - 备份失败 + Google OAuth 过期 + 记忆维护超期",
+    "2026-03-20 08:02: 记忆维护完成 - 归档安全加固/Gmail OAuth 问题到 projects.md/lessons.md",
+    "2026-03-20 03:05: 深夜巡检 - 备份仍失败 (SSH 密钥)/OAuth 过期/记忆维护第 6 天，问题已知且已通知，不打扰用户",
+"2026-03-19 08:01: 已通知用户 - 备份失败 + Google OAuth 过期 + 记忆维护超期",
     "2026-03-18 05:10: 备份失败 (SSH 密钥未授权 GitHub) - 待 08:00 后通知用户",
     "2026-03-16 08:13: 已通知用户 - 备份失败 (SSH 密钥) + Google OAuth 过期",
     "2026-03-16 08:13: 备份失败 - SSH 密钥未授权 GitHub (需重新添加公钥到 GitHub 账户)",
