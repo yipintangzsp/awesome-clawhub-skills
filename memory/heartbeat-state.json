@@ -9,6 +9,7 @@
   "backupStatus": "BACKUP_OK",
   "googleOAuthStatus": "EXPIRED",
   "notes": [
+    "2026-03-22 06:14: 晨间巡检 - 备份失败 (SSH 密钥)/Google OAuth 仍过期 (已知问题) / 天气☀️+4°C / 邮件日历因 OAuth 无法检查 / 待 08:00 后通知用户",
     "2026-03-21 07:34: 晨间巡检 - 备份成功 (BACKUP_OK) / Google OAuth 仍过期 (已知问题) / 天气☀️+5°C / 邮件日历因 OAuth 无法检查",
     "2026-03-20 08:02: 记忆维护完成 - 归档安全加固/Gmail OAuth 问题到 projects.md/lessons.md",
     "2026-03-20 03:05: 深夜巡检 - 备份仍失败 (SSH 密钥)/OAuth 过期/记忆维护第 6 天，问题已知且已通知，不打扰用户",
