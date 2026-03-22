@@ -1,10 +1,10 @@
 {
   "lastMemoryMaintenance": "2026-03-20",
   "lastChecks": {
-    "email": "2026-03-22T08:38:00+08:00",
-    "calendar": "2026-03-22T08:38:00+08:00",
-    "weather": "2026-03-22T08:38:00+08:00",
-    "backup": "2026-03-22T08:38:00+08:00"
+    "email": "2026-03-22T09:08:00+08:00",
+    "calendar": "2026-03-22T09:08:00+08:00",
+    "weather": "2026-03-22T09:08:00+08:00",
+    "backup": "2026-03-22T09:08:00+08:00"
   },
   "backupStatus": "BACKUP_FAILED",
   "googleOAuthStatus": "EXPIRED",
@@ -73,6 +73,11 @@
   ]
 }
 : OpenClaw 升级到 2026.3.8",
+    "2026-03-07: 已发布 9 个 SkillPay Skill 到 ClawHub",
+    "2026-03-06: weather 命令不可用，用 weather-pro skill 替代"
+  ]
+}
+ 升级到 2026.3.8",
     "2026-03-07: 已发布 9 个 SkillPay Skill 到 ClawHub",
     "2026-03-06: weather 命令不可用，用 weather-pro skill 替代"
   ]
