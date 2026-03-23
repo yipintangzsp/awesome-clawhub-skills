@@ -1,0 +1,29 @@
+name: Desktop Nightly
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: desktop-nightly
+  cancel-in-progress: false
+
+jobs:
+  build:
+    uses: ./.github/workflows/desktop-build.yml
+    with:
+      environment: nexu-test
+      sentry_env: "test"
+      cloud_url: "https://nexu.powerformer.net"
+      link_url: "https://nexu-link.powerformer.net"
+      update_feed_url: "https://desktop-releases.nexu.io/nightly"
+      build_source: "nightly"
+      release_tag: desktop-nightly
+      release_name: "Nexu Desktop Nightly"
+      channel: "nightly"
+    secrets: inherit
