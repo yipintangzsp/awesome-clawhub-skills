@@ -7,8 +7,8 @@
   },
   "server": {
     "name": "ClawHub Registry",
-    "checkUrl": "https://clawhub.com/api/health",
-    "fallbackUrl": "https://clawhub.com",
+    "checkUrl": "https://clawhub.ai/api/health",
+    "fallbackUrl": "https://clawhub.ai",
     "timeoutSeconds": 30,
     "retryCount": 3,
     "retryDelaySeconds": 5
@@ -29,7 +29,7 @@
   },
   "revenue": {
     "autoFetch": true,
-    "fetchEndpoint": "https://clawhub.com/api/revenue/pending",
+    "fetchEndpoint": "https://clawhub.ai/api/revenue/pending",
     "reportFormat": "markdown",
     "storagePath": "./revenue-reports"
   },
